@@ -25,7 +25,6 @@ const app = Fastify({
 app.register(FastifyCors, {
   methods: ["GET"],
   origin: (origin, cb) => {
-    console.log(origin);
     const url = new URL(origin);
 
     if (url.hostname === "localhost") {
