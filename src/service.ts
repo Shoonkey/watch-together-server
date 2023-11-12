@@ -32,7 +32,7 @@ class Service {
     if (withDetails)
       part.push("snippet", "contentDetails");
 
-    const response = await requester.get("/playlist", {
+    const response = await requester.get("/playlists", {
       params: {
         id: [id],
         part
